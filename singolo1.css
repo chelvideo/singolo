@@ -221,7 +221,8 @@
 
 .feat_desc {
     width: 219px;
-    min-height: 84px;
+    height: 84px;
+    overflow: hidden;
     margin-top: 8px;
     font-size: 12px;
     line-height: 22px;
