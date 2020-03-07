@@ -1,0 +1,231 @@
+@font-face {
+  font-family: 'Lato-Light';
+  src: url("/assets/fonts/Lato-Light.ttf");
+}
+
+@font-face {
+  font-family: 'Lato-Black';
+  src: url("/assets/fonts/Lato-Black.ttf");
+}
+
+/* ------------------ Get Quote ------------------*/
+.wrapper {
+  width: 1020px;
+  margin: 0 auto;
+}
+
+.quote {
+  background-color: #f06c64;
+}
+
+.quote__title {
+  margin: 0;
+  padding: 68px 0 0 40px;
+  font-size: 30px;
+  line-height: 18px;
+  color: #f0d8d9;
+  font-family: "Lato-Black";
+}
+
+.quote__desc {
+  padding: 10px 0 20px 40px;
+  letter-spacing: -0.2px;
+  width: 945px;
+  height: 57px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #f0d8d9;
+  font-family: "Lato-Light";
+  font-weight: 300;
+  text-align: left;
+}
+
+.quote-main {
+  margin: 0 auto;
+  padding-bottom: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 940px;
+}
+
+.form {
+  width: 603px;
+}
+
+.form__input {
+  width: 100%;
+  font-size: 12px;
+  margin: 8px 0;
+  padding-left: 15px;
+  line-height: 36px;
+  color: #f48c8f;
+  background-color: #d6564f;
+  font-family: "Lato-Light";
+  font-weight: 400;
+  text-align: left;
+  border: none;
+  border-radius: 4px;
+}
+
+.form__input_type-area {
+  line-height: initial;
+  height: 190px;
+  -webkit-padding-before: 10px;
+          padding-block-start: 10px;
+  resize: none;
+}
+
+.form__input::-webkit-input-placeholder {
+  color: #f48c8f;
+}
+
+.form__input:-ms-input-placeholder {
+  color: #f48c8f;
+}
+
+.form__input::-ms-input-placeholder {
+  color: #f48c8f;
+}
+
+.form__input::placeholder {
+  color: #f48c8f;
+}
+
+.form__btn {
+  border-radius: 4px;
+  background-color: #d6564f;
+  border: 1px solid #f48c8f;
+  line-height: 29px;
+  color: #f0d8d9;
+  font-family: "Lato-Black";
+  font-weight: 300;
+  font-size: 15px;
+  width: 150px;
+}
+
+.form__btn:hover {
+  cursor: pointer;
+  background-color: #f48c8f;
+}
+
+.CI {
+  width: 301px;
+}
+
+.CI__title {
+  margin: 7px 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  letter-spacing: 0.2px;
+  font-size: 18px;
+  color: #f0d8d9;
+  font-family: "Lato-Black";
+}
+
+.CI__desc {
+  width: 300px;
+  margin-top: 9px;
+  margin-bottom: 21px;
+  font-size: 12px;
+  line-height: 22px;
+  color: #f0d8d9;
+  font-family: "Lato-Light";
+  font-weight: 400;
+  letter-spacing: -0.1px;
+  text-align: left;
+}
+
+.CI__info {
+  display: block;
+  text-decoration: none;
+  width: 300px;
+  font-size: 12px;
+  line-height: 22px;
+  color: #f0d8d9;
+  font-family: "Lato-Light";
+  font-weight: 400;
+}
+
+.CI__location::before {
+  padding: 0 13px 0 5px;
+  content: url("./assets/image/CI_location.png");
+}
+
+.CI__phone::before {
+  padding: 0 11px 0 2px;
+  content: url("./assets/image/CI_phone.png");
+}
+
+.CI__mail::before {
+  padding: 0 11px 0 1px;
+  content: url("./assets/image/CI_mail.png");
+}
+
+.bottom-line-2 {
+  height: 5px;
+  background-color: #ea676b;
+}
+
+/* ------------------ Footer ------------------*/
+.footer {
+  min-height: 88px;
+  padding: 22px 40px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #666d89;
+  font-size: 12px;
+  background-color: #2d303a;
+  font-family: "Lato-Light";
+  font-weight: 400;
+}
+
+.footer__copyright {
+  padding-top: 9px;
+}
+
+.footer-links {
+  width: 154px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-links__item {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: 1px solid #656d89;
+}
+
+.footer-links__item svg {
+  width: 14px;
+  height: 14px;
+  position: relative;
+  left: 8px;
+  top: 9px;
+}
+
+.footer-links__item path {
+  fill: #656d89;
+}
+
+.footer-links__item:hover {
+  cursor: pointer;
+  border: 1px solid #f0d8d9;
+}
+
+.footer-links__item:hover path {
+  fill: #f0d8d9;
+}
+/*# sourceMappingURL=singolo3.css.map */
