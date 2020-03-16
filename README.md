@@ -1,5 +1,8 @@
 # Singolo
+2002-03-16
+script.js - DOM events task
 
+2020-03-09
 index.html, style.css is a full project.
 
 /parts
