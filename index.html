@@ -13,12 +13,12 @@
             <a href="#" class="logo_link">singolo<span>*</span></a>
         </h1>
         <nav>
-            <ul class="menu">
-                <li class="menu_item active">home</li>
-                <li class="menu_item">services</li>
-                <li class="menu_item">portfolio</li>
-                <li class="menu_item">about</li>
-                <li class="menu_item">contact</li>
+            <ul class="menu" id="menu">
+                <li class="menu_item"><a class="link" id="link1" href="#header">home</a></li>
+                <li class="menu_item"><a class="link" id="link2" href="#services">services</a></li>
+                <li class="menu_item"><a class="link" id="link3" href="#portfolio">portfolio</a></li>
+                <li class="menu_item"><a class="link" id="link4" href="#about">about</a></li>
+                <li class="menu_item"><a class="link" id="link5" href="#quote">contact</a></li>
             </ul>
         </nav>
     </Header>
@@ -26,23 +26,30 @@
     <Main>
         <div class="line_color-1"></div>
         <section class="slider">
-            <img src="./assets/image/arrow.svg" alt="arrow" class="left_arrow">
-            <div class="main_img">
+            <img src="./assets/image/arrow.svg" alt="arrow" class="left_arrow" id="left">
+            
+            <div class="main_img1" id="slide1">
                 <div class="vertical_phone">
-                    <img src="./assets/image/phone.png" alt="phone" class="phone_base">
-                    <div class="phone_screen"></div>
-                    <img src="./assets/image/phone_shadow.svg" alt="shadow" class="phone_shadow">
+                    <img src="./assets/image/phone.png" alt="phone" class="phone_base" id="phone1">
+                    <div class="phone_screen" id="screen1"></div>
+                    <img src="./assets/image/phone_shadow.svg" alt="shadow" class="phone_shadow" >
                 </div>
                 <div class="horizontal_phone">
-                    <img src="./assets/image/phone.png" alt="phone" class="phone_base">
-                    <div class="phone_screen"></div>
+                    <img src="./assets/image/phone.png" alt="phone" class="phone_base" id="phone2">
+                    <div class="phone_screen" id="screen2"></div>
                     <img src="./assets/image/phone_shadow.svg" alt="shadow" class="phone_shadow">
                 </div>
             </div>
-            <img src="./assets/image/arrowRight.svg" alt="arrow" class="right_arrow">
+            <div class="main_img2" id="slide2">
+                <img src="./assets/image/slide2.png" alt="phone" class="phone_comp">
+            </div>
+            <div class="main_img3" id="slide3">
+                <img src="./assets/image/slide2.png" alt="phone" class="phone_comp">
+            </div>
+            <img src="./assets/image/arrowRight.svg" alt="arrow" class="right_arrow" id="right">
         </section>
-        <div class="line_color-2"></div>
-        <section class="service">
+        <!-- <div class="line_color-2"></div> -->
+        <section class="service" id="services">
             <h2 class="service_title">Our Services</h2>
             <p class="service_desc">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus,
                 nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris 
@@ -100,33 +107,33 @@
         </section>
         <div class="line_color-3"></div>
 
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
             <h2 class="portfolio__title">Portfolio</h2>
             <p class="portfolio__desc">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, 
                 eget lacinia odio sem nec elit.</p>
-            <nav class="nav-menu">
-                <div class="nav-menu__item">All</div>
-                <div class="nav-menu__item">Web Design</div>
-                <div class="nav-menu__item">Graphic Design</div>
-                <div class="nav-menu__item">Artwork</div>
+            <nav id="nav-menu" class="nav-menu">
+                <div id="item1" class="nav-menu__item">All</div>
+                <div id="item2" class="nav-menu__item">Web Design</div>
+                <div id="item3" class="nav-menu__item">Graphic Design</div>
+                <div id="item4" class="nav-menu__item">Artwork</div>
             </nav>
             <div class="example-field">
-                <div class="example-field__item"></div>
-                <div class="example-field__item"></div>
-                <div class="example-field__item"></div>
-                <div class="example-field__item"></div>
-                <div class="example-field__item"></div>
-                <div class="example-field__item"></div>
-                <div class="example-field__item"></div>
-                <div class="example-field__item"></div>
-                <div class="example-field__item"></div>
-                <div class="example-field__item"></div>
-                <div class="example-field__item"></div>
-                <div class="example-field__item"></div>
+                <div class="example-field__item" id="ex1"></div>
+                <div class="example-field__item" id="ex2"></div>
+                <div class="example-field__item" id="ex3"></div>
+                <div class="example-field__item" id="ex4"></div>
+                <div class="example-field__item" id="ex5"></div>
+                <div class="example-field__item" id="ex6"></div>
+                <div class="example-field__item" id="ex7"></div>
+                <div class="example-field__item" id="ex8"></div>
+                <div class="example-field__item" id="ex9"></div>
+                <div class="example-field__item" id="ex10"></div>
+                <div class="example-field__item" id="ex11"></div>
+                <div class="example-field__item" id="ex12"></div>
             </div>
         </section>
         <div class="line_color-4"></div>
-        <section class="about">
+        <section class="about" id="about">
             <h2 class="about__title">About Us</h2>
             <p class="about__desc">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, 
                 nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris 
@@ -276,19 +283,28 @@
             </div>
         </section>
 
-        <section class="quote">
+        <section class="quote" id="quote">
             <h2 class="quote__title">Get a Quote</h2>
             <p class="quote__desc">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, 
                 eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
             </p>
             <div class="quote-main">
-                <form class="form" action="">
-                    <input type="text" class="form__input" placeholder="Name (Required)" required>
-                    <input type="email" class="form__input" placeholder="Email (Required)" required>
-                    <input type="text" class="form__input" placeholder="Subject">
-                    <textarea type="area" class="form__input form__input_type-area" placeholder="Describe your quote in detail..."></textarea>
-                    <button class="form__btn" type="submit" value="end Quote">Send Quote</button>
+                <form class="form" action="#" id="sendQuote">
+                    <input id="name" type="text" class="form__input" placeholder="Name (Required)" required>
+                    <input id="email" type="email" class="form__input" placeholder="Email (Required)" required>
+                    <input id="subj" type="text" class="form__input" placeholder="Subject">
+                    <textarea id="desc" type="area" class="form__input form__input_type-area" placeholder="Describe your quote in detail..."></textarea>
+                    <button class="form__btn" type="submit" value="end Quote" >Send Quote</button>
                 </form>
+                <div class="popup disabled" id="popup">
+                    <div class="popup__bg"></div>
+                    <div class="popup__cont">
+                        <p class="popup__title">Письмо отправлено</p>
+                        <div class="popup__subj" id="popupSubj"></div>
+                        <div class="popup__desc" id="popupDesc"></div>
+                        <button class="form__btn" type="submit" id="close">OK</button>
+                    </div>
+                </div>
                 <div class="CI">
                     <h3 class="CI__title">Contact Information</h3>
                     <p class="CI__desc">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. 
@@ -348,4 +364,5 @@
         </div>
     </Footer>
 </body>
+<script src="./script.js"></script>
 </html>
