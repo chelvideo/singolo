@@ -1,12 +1,44 @@
 //------------------ Header menu handler ------------------
 
+let moveTo;
+let curPos;
+
+const links=Array.from(document.querySelectorAll('.link'));
+let coordsY = links.map(item=>{
+    return document.querySelector(item.getAttribute('href')).getBoundingClientRect().top + window.pageYOffset - 90;
+})
+coordsY.push(document.body.offsetHeight);
+
+window.addEventListener('scroll', scroll);
+
 document.getElementById('menu').addEventListener('click', event => {
-    const arr=document.querySelectorAll('.link');
-    Array.from(arr).map((item) => {
+    links.map((item) => {
         document.getElementById(item.id).classList.remove('active');
     })
     document.getElementById(event.target.id).classList.add('active');
+
+    event.preventDefault();
+    curPos = self.pageYOffset;
+    window.removeEventListener('scroll', scroll);
+    moveTo=coordsY[Number(event.target.id[4]) - 1 ];
+    window.scrollBy({ top: moveTo - curPos, behavior: 'smooth' });
+    setTimeout(() => {
+        window.addEventListener('scroll', scroll);
+    }, 1000); 
 })
+
+function scroll() {
+    curPos = self.pageYOffset;
+    
+    for (let i=1; i<=links.length;i++) {
+        if (curPos>=coordsY[i-1] && curPos<coordsY[i]) {
+            links.map((item) => {
+                document.getElementById(item.id).classList.remove('active');
+            })
+            document.getElementById(`link${i}`).classList.add('active');
+        }
+    }
+}
 
 //------------------ Portfolio menu handler ------------------
 let shift = 1;
@@ -19,13 +51,10 @@ document.getElementById('nav-menu').addEventListener('click', event => {
         document.getElementById(event.target.id).classList.add('active_item');
 
 
-        const example=document.querySelectorAll('.example-field__item');
-        
-        Array.from(example).map((item,index) => {
-            document.querySelector(`.example-field__item:nth-child(${index+1})`).style.backgroundImage = 
-                `url(./assets/image/portfolio-images/${(index+shift+12)%12+1}.jpg)`;
-        })
-        shift += 1;
+        const example=Array.from(document.querySelectorAll('.example-field__item'));
+        let last=example[0].cloneNode(true);
+        example[0].remove();
+        example[11].after(last);
     }
 })
 
@@ -38,7 +67,8 @@ document.querySelector('.example-field').addEventListener('click', event => {
 })
 
 //------------------ Slider ------------------
-let x=0; 
+let x = 0;
+
 document.getElementById('right').addEventListener('click', event => {
     x == -1020 ? x = 1020: null;
     x=x-1020;
@@ -56,6 +86,7 @@ function move (x) {
     document.getElementById('slide2').style.left=`${x+1020}px`;
     document.getElementById('slide3').style.left=`${x-1020}px`;
 }
+
 
 //------------------ Phone screen off handler ------------------
 document.querySelector('.vertical_phone').addEventListener('click', event => {
@@ -95,4 +126,6 @@ document.getElementById('close').addEventListener('click', event => {
     document.getElementById('desc').value='';
 
 })
+
+
 
