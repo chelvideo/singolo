@@ -1,12 +1,20 @@
 @charset "UTF-8";
 @font-face {
   font-family: 'Lato-Light';
+<<<<<<< HEAD
   src: url(./assets/fonts/Lato-Light.ttf);
+=======
+  src: url("./assets/fonts/Lato-Light.ttf");
+>>>>>>> c9961630d438719bab5a1d66916f1930159a1ff2
 }
 
 @font-face {
   font-family: 'Lato-Black';
+<<<<<<< HEAD
   src: url(./assets/fonts/Lato-Black.ttf);
+=======
+  src: url("./assets/fonts/Lato-Black.ttf");
+>>>>>>> c9961630d438719bab5a1d66916f1930159a1ff2
 }
 
 /* ------------------ Header ------------------*/
