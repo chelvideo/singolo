@@ -40,6 +40,10 @@ function scroll() {
     }
 }
 
+document.getElementById('menuBtn').addEventListener('click', event => {
+    document.getElementById('menuBtn').classList.toggle('btnRotate');
+})
+
 //------------------ Portfolio menu handler ------------------
 let shift = 1;
 document.getElementById('nav-menu').addEventListener('click', event => {
