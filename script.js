@@ -42,6 +42,8 @@ function scroll() {
 
 document.getElementById('menuBtn').addEventListener('click', event => {
     document.getElementById('menuBtn').classList.toggle('btnRotate');
+    document.querySelector('.header').classList.toggle('burgerView_header');
+    document.getElementById('menu').classList.toggle('burgerView_menu');
 })
 
 //------------------ Portfolio menu handler ------------------
