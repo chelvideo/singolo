@@ -39,10 +39,6 @@
   text-transform: uppercase;
 }
 
-.main {
-  margin-top: 90px;
-}
-
 .logo {
   padding-left: 40px;
   font-size: 24.7px;
@@ -97,7 +93,7 @@
 
 /* ------------------ Slider section ------------------*/
 .line_color-1 {
-  height: 6px;
+  height: 96px;
   background-color: #323746;
 }
 
@@ -886,6 +882,10 @@
   }
   .menu {
     display: none;
+    margin-top: calc(50vh - 226px);
+  }
+  .menu_item:not(:nth-last-child(1))::after {
+    content: none;
   }
   .logo {
     padding-left: 0;
@@ -916,6 +916,13 @@
     font-size: 24px;
     padding: 0;
     min-width: initial;
+  }
+  .burgerView_logoBlock {
+    margin-left: -42%;
+    margin-top: 21px;
+  }
+  .burgerView_main {
+    opacity: 0.4;
   }
   .logo_block {
     width: calc(50% + 48px);

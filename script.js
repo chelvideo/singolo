@@ -44,6 +44,8 @@ document.getElementById('menuBtn').addEventListener('click', event => {
     document.getElementById('menuBtn').classList.toggle('btnRotate');
     document.querySelector('.header').classList.toggle('burgerView_header');
     document.getElementById('menu').classList.toggle('burgerView_menu');
+    document.getElementById('home').classList.toggle('burgerView_main');
+    document.querySelector('.logo_block').classList.toggle('burgerView_logoBlock');
 })
 
 //------------------ Portfolio menu handler ------------------
